@@ -82,12 +82,6 @@ All site content is managed through the `/src/data/data.tsx` file. Update the fo
 - **Experience** - Work history and projects
 - **Contact** - Email, social links
 
-## 📧 Contact Form
-
-The contact form is set up with input handling. For email functionality, integrate with:
-- [Sendgrid](https://sendgrid.com/)
-- [EmailJS](https://www.emailjs.com/)
-- [Formspree](https://formspree.io/)
 
 ## 🌐 Deployment
 
