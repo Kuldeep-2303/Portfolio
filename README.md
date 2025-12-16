@@ -98,7 +98,7 @@ The contact form is set up with input handling. For email functionality, integra
 3. Configure build settings (auto-detected for Next.js)
 4. Deploy!
 
-For detailed instructions, see [Vercel's deployment guide](https://vercel.com/guides/deploying-nextjs-with-vercel).
+For detailed instructions, see [Vercel's deployment guide]().
 
 ## 📱 Features
 
@@ -112,7 +112,7 @@ For detailed instructions, see [Vercel's deployment guide](https://vercel.com/gu
 
 ## 📄 License
 
-This project is based on the [React Resume Template](https://github.com/tbakerx/react-resume-template) by Tim Baker.
+This project is based on the [Portfolio](https://github.com/Kuldeep-2303/Portfolio) by Kuldeep Khalotiya.
 
 ---
 
@@ -127,6 +127,6 @@ Software Engineer | B.Tech CSE @ Parul University
 ---
 
 **Original Template Credits:**  
-Created by [Tim Baker](https://github.com/tbakerx)
+Created by [Kuldeep Khalotiya](https://github.com/Kuldeep-2303)
 
 
