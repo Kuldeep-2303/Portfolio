@@ -104,9 +104,6 @@ For detailed instructions, see [Vercel's deployment guide]().
 ✅ Fast loading times  
 ✅ SEO optimized  
 
-## 📄 License
-
-This project is based on the [Portfolio](https://github.com/Kuldeep-2303/Portfolio) by Kuldeep Khalotiya.
 
 ---
 
@@ -120,7 +117,5 @@ Software Engineer | B.Tech CSE @ Parul University
 
 ---
 
-**Original Template Credits:**  
-Created by [Kuldeep Khalotiya](https://github.com/Kuldeep-2303)
 
 
