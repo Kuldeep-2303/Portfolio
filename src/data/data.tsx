@@ -14,7 +14,6 @@ import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
 
 import {
   About,
@@ -25,7 +24,6 @@ import {
   PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
   TimelineItem,
 } from './dataDef';
 
@@ -46,7 +44,6 @@ export const SectionId = {
   Portfolio: 'portfolio',
   Resume: 'resume',
   Skills: 'skills',
-  Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -231,29 +228,6 @@ export const experience: TimelineItem[] = [
     ),
   },
 ];
-
-/* ================= TESTIMONIAL ================= */
-
-export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
-  testimonials: [
-    {
-      name: 'Prof. Dr. Rajesh Kumar',
-      text: 'Kuldeep demonstrates exceptional technical skills and problem-solving abilities. His work on the Smart Classroom System was innovative and production-ready.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Priya Sharma',
-      text: 'Working with Kuldeep on the AgroTech project was seamless. He brings creativity and dedication to every task. Highly recommended for any development team.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Tech Lead, Project Mentor',
-      text: 'Kuldeep shows strong commitment to clean code and best practices. His full-stack capabilities and willingness to learn new technologies make him a valuable asset.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
-  ],
-};
 
 /* ================= CONTACT ================= */
 
