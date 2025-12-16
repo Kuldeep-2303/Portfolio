@@ -1,31 +1,13 @@
-import {
-  AcademicCapIcon,
-  ArrowDownTrayIcon,
-  CalendarIcon,
-  MapIcon,
-  SparklesIcon,
-} from '@heroicons/react/24/outline';
+import {AcademicCapIcon, ArrowDownTrayIcon, CalendarIcon, MapIcon, SparklesIcon} from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import profilepic from '../images/profilepic.jpg';
-
-import {
-  About,
-  ContactSection,
-  ContactType,
-  Hero,
-  HomepageMeta,
-  PortfolioItem,
-  SkillGroup,
-  Social,
-  TimelineItem,
-} from './dataDef';
+import {About, ContactSection, ContactType, Hero, HomepageMeta, PortfolioItem, SkillGroup, Social, TimelineItem} from './dataDef';
 
 /* ================= META ================= */
 
@@ -92,10 +74,10 @@ export const aboutData: About = {
   description:
     'An enthusiastic and responsible individual with excellent interpersonal and communication skills, a strong work ethic, and a collaborative mindset. Adaptable to new challenges and fast-changing environments, with the ability to learn quickly and apply feedback effectively. Known for being self-motivated, disciplined, and detail-oriented, with a consistent focus on delivering quality outcomes. Committed to continuous personal and professional growth, while maintaining a positive attitude and reliability in team-oriented and independent roles.',
   aboutItems: [
-    { label: 'Location', text: 'Vadodara, Gujarat', Icon: MapIcon },
-    { label: 'Study', text: 'Parul University', Icon: AcademicCapIcon },
-    { label: 'Interests', text: 'Hiking, Extreme Sports', Icon: SparklesIcon },
-    { label: 'Phone', text: '+91 9373180932', Icon: CalendarIcon },
+    {label: 'Location', text: 'Vadodara, Gujarat', Icon: MapIcon},
+    {label: 'Study', text: 'Parul University', Icon: AcademicCapIcon},
+    {label: 'Interests', text: 'Hiking, Extreme Sports', Icon: SparklesIcon},
+    {label: 'Phone', text: '+91 9373180932', Icon: CalendarIcon},
   ],
 };
 
@@ -105,36 +87,36 @@ export const skills: SkillGroup[] = [
   {
     name: 'Programming Languages',
     skills: [
-      { name: 'JavaScript', level: 9 },
-      { name: 'TypeScript', level: 8 },
-      { name: 'Python', level: 9 },
-      { name: 'Java', level: 7 },
+      {name: 'JavaScript', level: 9},
+      {name: 'TypeScript', level: 8},
+      {name: 'Python', level: 9},
+      {name: 'Java', level: 7},
     ],
   },
   {
     name: 'Frontend Development',
     skills: [
-      { name: 'React.js', level: 9 },
-      { name: 'HTML / CSS', level: 9 },
-      { name: 'Tailwind CSS', level: 8 },
+      {name: 'React.js', level: 9},
+      {name: 'HTML / CSS', level: 9},
+      {name: 'Tailwind CSS', level: 8},
     ],
   },
   {
     name: 'Backend Development',
     skills: [
-      { name: 'Flask', level: 8 },
-      { name: 'Django', level: 8 },
-      { name: 'Node.js', level: 7 },
+      {name: 'Flask', level: 8},
+      {name: 'Django', level: 8},
+      {name: 'Node.js', level: 7},
     ],
   },
   {
     name: 'Tools & Technologies',
     skills: [
-      { name: 'Git', level: 8 },
-      { name: 'Firebase', level: 8 },
-      { name: 'MySQL', level: 7 },
-      { name: 'OpenCV', level: 7 },
-      { name: 'TensorFlow', level: 7 },
+      {name: 'Git', level: 8},
+      {name: 'Firebase', level: 8},
+      {name: 'MySQL', level: 7},
+      {name: 'OpenCV', level: 7},
+      {name: 'TensorFlow', level: 7},
     ],
   },
 ];
@@ -256,6 +238,6 @@ export const contact: ContactSection = {
 /* ================= SOCIAL ================= */
 
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/Kuldeep-2303' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://linkedin.com/in/kuldeep-khalotiya' },
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Kuldeep-2303'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://linkedin.com/in/kuldeep-khalotiya'},
 ];
