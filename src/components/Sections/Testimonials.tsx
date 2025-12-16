@@ -2,8 +2,8 @@ import classNames from 'classnames';
 import {FC, memo, UIEventHandler, useCallback, useEffect, useMemo, useRef, useState} from 'react';
 
 import {isApple, isMobile} from '../../config';
-import {SectionId, testimonial} from '../../data/data';
-import {Testimonial} from '../../data/dataDef';
+import {SectionId} from '../../data/data';
+import {Testimonial as TestimonialType} from '../../data/dataDef';
 import useInterval from '../../hooks/useInterval';
 import useWindow from '../../hooks/useWindow';
 import QuoteIcon from '../Icon/QuoteIcon';
@@ -19,11 +19,12 @@ const Testimonials: FC = memo(() => {
 
   const {width} = useWindow();
 
-  const {imageSrc, testimonials} = testimonial;
+  const testimonials: TestimonialType[] = [];
+  const imageSrc: string | undefined = undefined;
 
   const resolveSrc = useMemo(() => {
     if (!imageSrc) return undefined;
-    return typeof imageSrc === 'string' ? imageSrc : imageSrc.src;
+    return imageSrc;
   }, [imageSrc]);
 
   // Mobile iOS doesn't allow background-fixed elements
@@ -70,7 +71,7 @@ const Testimonials: FC = memo(() => {
   }
 
   return (
-    <Section noPadding sectionId={SectionId.Testimonials}>
+    <Section noPadding sectionId={SectionId.Hero}>
       <div
         className={classNames(
           'flex w-full items-center justify-center bg-cover bg-center px-4 py-16 md:py-24 lg:px-8',
@@ -84,7 +85,7 @@ const Testimonials: FC = memo(() => {
               className="no-scrollbar flex w-full touch-pan-x snap-x snap-mandatory gap-x-6 overflow-x-auto scroll-smooth"
               onScroll={handleScroll}
               ref={scrollContainer}>
-              {testimonials.map((testimonial, index) => {
+              {testimonials.map((testimonial: TestimonialType, index: number) => {
                 const isActive = index === activeIndex;
                 return (
                   <Testimonial isActive={isActive} key={`${testimonial.name}-${index}`} testimonial={testimonial} />
@@ -92,7 +93,7 @@ const Testimonials: FC = memo(() => {
               })}
             </div>
             <div className="flex gap-x-4">
-              {[...Array(testimonials.length)].map((_, index) => {
+              {[...Array(testimonials.length)].map((_: unknown, index: number) => {
                 const isActive = index === activeIndex;
                 return (
                   <button
@@ -113,7 +114,7 @@ const Testimonials: FC = memo(() => {
   );
 });
 
-const Testimonial: FC<{testimonial: Testimonial; isActive: boolean}> = memo(
+const Testimonial: FC<{testimonial: TestimonialType; isActive: boolean}> = memo(
   ({testimonial: {text, name, image}, isActive}) => (
     <div
       className={classNames(
