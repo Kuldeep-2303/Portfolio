@@ -1,32 +1,21 @@
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
-  BuildingOffice2Icon,
   CalendarIcon,
-  FlagIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
+
 import {
   About,
   ContactSection,
@@ -40,17 +29,16 @@ import {
   TimelineItem,
 } from './dataDef';
 
-/**
- * Page meta data
- */
+/* ================= META ================= */
+
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Kuldeep Khalotiya - Software Engineer',
+  description:
+    'Aspiring Software Engineer specializing in ReactJS, Python, and Machine Learning',
 };
 
-/**
- * Section definition
- */
+/* ================= SECTION IDS ================= */
+
 export const SectionId = {
   Hero: 'hero',
   About: 'about',
@@ -58,29 +46,30 @@ export const SectionId = {
   Portfolio: 'portfolio',
   Resume: 'resume',
   Skills: 'skills',
-  Stats: 'stats',
   Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 
-/**
- * Hero section
- */
+/* ================= HERO ================= */
+
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Kuldeep Khalotiya.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        Aspiring <strong className="text-stone-100">Software Engineer</strong> with hands-on experience in
+        <strong className="text-stone-100"> Full-Stack Development</strong>,
+        <strong className="text-stone-100"> React.js</strong>, and
+        <strong className="text-stone-100"> Python with Machine Learning</strong>. Skilled in building scalable,
+        responsive web applications and delivering efficient solutions to real-world problems through clean,
+        optimized code.
       </p>
+
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time, I enjoy <strong className="text-stone-100">hiking</strong>,
+        <strong className="text-stone-100"> extreme sports</strong>, and exploring new technologies.
       </p>
     </>
   ),
@@ -99,275 +88,200 @@ export const heroData: Hero = {
   ],
 };
 
-/**
- * About section
- */
+/* ================= ABOUT ================= */
+
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description:
+    'Aspiring Software Engineer with hands-on experience in full-stack development, specializing in ReactJS, Python, and Machine Learning. Proficient in building scalable, responsive web applications and solving real-world problems through efficient code.',
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    { label: 'Location', text: 'Vadodara, Gujarat', Icon: MapIcon },
+    { label: 'Study', text: 'Parul University', Icon: AcademicCapIcon },
+    { label: 'Interests', text: 'Hiking, Extreme Sports', Icon: SparklesIcon },
+    { label: 'Phone', text: '+91 9373180932', Icon: CalendarIcon },
   ],
 };
 
-/**
- * Skills section
- */
+/* ================= SKILLS ================= */
+
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Programming Languages',
     skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
+      { name: 'JavaScript', level: 9 },
+      { name: 'TypeScript', level: 8 },
+      { name: 'Python', level: 9 },
+      { name: 'Java', level: 7 },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Frontend Development',
     skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
+      { name: 'React.js', level: 9 },
+      { name: 'HTML / CSS', level: 9 },
+      { name: 'Tailwind CSS', level: 8 },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Backend Development',
     skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
+      { name: 'Flask', level: 8 },
+      { name: 'Django', level: 8 },
+      { name: 'Node.js', level: 7 },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Tools & Technologies',
     skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
+      { name: 'Git', level: 8 },
+      { name: 'Firebase', level: 8 },
+      { name: 'MySQL', level: 7 },
+      { name: 'OpenCV', level: 7 },
+      { name: 'TensorFlow', level: 7 },
     ],
   },
 ];
 
-/**
- * Portfolio section
- */
+/* ================= PORTFOLIO ================= */
+
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'KK Global University Website',
+    description:
+      'Fully responsive and scalable university website built with React.js, TypeScript, Tailwind CSS, and shadcn-ui.',
+    url: 'https://react-college-revamp-project.vercel.app/',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Smart Classroom Monitoring System',
+    description:
+      'AI-powered face recognition system for automated student attendance using Python, OpenCV, TensorFlow, and Flask.',
+    url: 'https://github.com/Kuldeep-2303',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'AgroTech Platform',
+    description:
+      'Farming support platform with weather data, soil analysis, crop planning, and NDVI-based visualization.',
+    url: 'https://github.com/Kuldeep-2303/AgroTech',
     image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
   },
 ];
 
-/**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
- */
+/* ================= EDUCATION ================= */
+
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2022 - 2026',
+    location: 'Parul University, Vadodara',
+    title: 'B.Tech in Computer Science and Engineering',
+    content: <p>Focused on full-stack development, machine learning, and software engineering.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2021 - 2022',
+    location: 'Makhanlal Chaturvedi University, Bhopal',
+    title: 'Diploma in Computer Applications',
+    content: <p>Learned programming fundamentals and computer applications.</p>,
   },
 ];
+
+/* ================= EXPERIENCE ================= */
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'Feb 2025 - May 2025',
+    location: 'Personal Project',
+    title: 'Full Stack Developer – KK Global University Website',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul className="list-disc pl-5 space-y-2">
+        <li>Built a fully responsive and scalable university website using React.js and TypeScript.</li>
+        <li>Integrated shadcn-ui for consistent UI and reusable components.</li>
+        <li>Implemented modular architecture and hot-reloading.</li>
+        <li>Optimized performance and cross-device compatibility.</li>
+        <li><strong>Technologies:</strong> React.js, TypeScript, Tailwind CSS, Vite</li>
+      </ul>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'Dec 2024 - Mar 2025',
+    location: 'Personal Project',
+    title: 'AI/ML Engineer – Smart Classroom Monitoring',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul className="list-disc pl-5 space-y-2">
+        <li>Designed an AI-based face recognition system for real-time attendance.</li>
+        <li>Trained ML models using TensorFlow and OpenCV.</li>
+        <li>Built Flask REST APIs and integrated Firebase Realtime Database.</li>
+        <li>Reduced proxy attendance with accurate recognition.</li>
+        <li><strong>Technologies:</strong> Python, OpenCV, TensorFlow, Flask, Firebase, MySQL</li>
+      </ul>
+    ),
+  },
+  {
+    date: 'Jul 2024 - Sep 2024',
+    location: 'Personal Project',
+    title: 'Full Stack Developer – AgroTech Platform',
+    content: (
+      <ul className="list-disc pl-5 space-y-2">
+        <li>Developed a farming platform with weather data and soil analysis.</li>
+        <li>Implemented crop planning and market pricing modules.</li>
+        <li>Integrated NDVI satellite visualization for crop monitoring.</li>
+        <li>Built secure login and personalized dashboards.</li>
+        <li><strong>Technologies:</strong> Django, Python, HTML, CSS</li>
+      </ul>
     ),
   },
 ];
 
-/**
- * Testimonial section
- */
+/* ================= TESTIMONIAL ================= */
+
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      name: 'Prof. Dr. Rajesh Kumar',
+      text: 'Kuldeep demonstrates exceptional technical skills and problem-solving abilities. His work on the Smart Classroom System was innovative and production-ready.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      name: 'Priya Sharma',
+      text: 'Working with Kuldeep on the AgroTech project was seamless. He brings creativity and dedication to every task. Highly recommended for any development team.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+      name: 'Tech Lead, Project Mentor',
+      text: 'Kuldeep shows strong commitment to clean code and best practices. His full-stack capabilities and willingness to learn new technologies make him a valuable asset.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
 };
 
-/**
- * Contact section
- */
+/* ================= CONTACT ================= */
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Feel free to reach out for opportunities, collaborations, or just to connect.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'kuldeepkhalotiya5@gmail.com',
+      href: 'mailto:kuldeepkhalotiya5@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Parul University, Vadodara',
+      href: 'https://www.google.com/maps/place/Vadodara,+Gujarat',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'Kuldeep-2303',
+      href: 'https://github.com/Kuldeep-2303',
     },
   ],
 };
 
-/**
- * Social items
- */
+/* ================= SOCIAL ================= */
+
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/Kuldeep-2303' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://linkedin.com/in/kuldeep-khalotiya' },
 ];
