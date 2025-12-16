@@ -90,7 +90,7 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description:
-    'Aspiring Software Engineer with hands-on experience in full-stack development, specializing in ReactJS, Python, and Machine Learning. Proficient in building scalable, responsive web applications and solving real-world problems through efficient code.',
+    'An enthusiastic and responsible individual with excellent interpersonal and communication skills, a strong work ethic, and a collaborative mindset. Adaptable to new challenges and fast-changing environments, with the ability to learn quickly and apply feedback effectively. Known for being self-motivated, disciplined, and detail-oriented, with a consistent focus on delivering quality outcomes. Committed to continuous personal and professional growth, while maintaining a positive attitude and reliability in team-oriented and independent roles.',
   aboutItems: [
     { label: 'Location', text: 'Vadodara, Gujarat', Icon: MapIcon },
     { label: 'Study', text: 'Parul University', Icon: AcademicCapIcon },
